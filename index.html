@@ -11,22 +11,56 @@
         <img src="img/logo.svg" width="111" height="24" alt="GlaccyShop">
       </a>
       <ul class="site-navigation">
-        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Каталог</a>
+          <form  action="https://echo.htmlacademy.ru" method="post">
+          <select id="ice-cream" name="ice-cream" multiple>
+            <optgroup label="Новинки">
+              <option value="Сливочное">Сливочное</option>
+              <option value="Щербеты">Щербеты</option>
+              <option value="Фруктовый лёд">Фруктовый лёд</option>
+              <option value="Мелорин">Мелорин</option>
+            </optgroup>
+          </select>
+          </form>
+        </li>
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">Прайс-лист</a></li>
       </ul>
       <ul class="user-navigation">
-        <li class="login-link">Вход</li>
-        <li class="search">поиск</li>
+
+        <li>
+          <div class="login">
+          <a class="login-link" href="login.html"
+        >Вход</a>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <label  class="visually-hidden" for="user-login">Логин</label>
+              <input class="login-icon-user" type="text" name="loginuser" id="user-login"
+              placeholder="Логин">
+              <label  class="visually-hiden" for="user-password">Пароль</label>
+              <input class="login-icon-password" type="password" name="password" id="user-password" placeholder="Пароль">
+              <button class="button" type="submit">Вход</button>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </form>
+          </div>
+        </li>
+        <li class="search">
+            <div>
+              <a href="#">поиск</a>
+              <form class="search-search" action="https://echo.htmlacademy.ru" method="post">
+                <input type="search" name="search" placeholder="Что ищем?">
+              </form>
+            </div>
+        </li>
         <li class="bascet">корзина</li>
       </ul>
       <p class="working time">
         <span>С 10 до 20, ежедневно</span>
        <span>8 812 450-25-25</span>
       </p>
-      <img src="img/glaccy.png wid" width="1250" height="2449" alt="ice">
-      <img src="img/glaccy2.png wid" width="1250" height="2449" alt="ice">
-      <img src="img/glaccy3.png wid" width="1250" height="2449" alt="ice">
+      <img src="img/glaccy.png wid" width="345" height="600" alt="ice">
+      <img src="img/glaccy2.png wid" width="345" height="600" alt="ice">
+      <img src="img/glaccy3.png wid" width="345" height="600" alt="ice">
       <a class="button">Добавить оба</a>
     </nav>
   </header>
@@ -120,17 +154,35 @@
         </li>
       </ul>
     </section>
-    <article class="icecream-blog">
-      <a href="#">
-        <span>
-        Новое в нашем блоге.
-      </span>
-      </a>
-    </article>
 
     <section class="follow-us">
-      <!-- Здесь будет форма-->
+        <h3>Новое в нашем блоге</h3>
+        <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
     </section>
+      <section class="follow-us-us">
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)
+          </p>
+        <input type="text" name="comit">
+        <button class="button" type="submit">Отправить</button>
+      <!--форма-->
+        </form>
+      </section>
+    <div>
+      <form class="feedback" action="https://echo.htmlacademy" method="post" aria-label="Форма обратной связи">
+        <p><b>Мы обязательно ответим вам!</b></p>
+        <label сlass="visually-hidden" for="noname">Имя</label>
+        <input type="text" name="name" id="noname" placeholder="Как вас зовут">
+        <br>
+        <label сlass="visually-hidden" for="mail">Ваша почта для ответа?</label>
+        <input type="text" name="email" id="mail" placeholder="Ваша почта для ответа?">
+        <br>
+        <textarea name="comment" rows="10" cols="15">Напишите что-нибудь...</textarea>
+        <br>
+        <button class="button" type="submit">Отправить</button>
+        <!--Форма Обратной связи-->
+      </form>
+    </div>
   </main>
   <footer class="main-footer">
     <ul>
@@ -151,6 +203,5 @@
     <a  href="https://htmlacademy.ru">Сделано в HTML Academy</a>
 
   </footer>
-
-</body>
+  </body>
 </html>
