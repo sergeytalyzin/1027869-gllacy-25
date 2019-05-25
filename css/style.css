@@ -64,7 +64,6 @@ a {
   height: 220px;
   background-color:white;
   background-image:url("img/news.png");
-  background-position: 25px 1400px;
   background-repeat:no-repeat;
   background-size:560px 220px;
 
@@ -89,7 +88,17 @@ a {
   height: 220px;
   background-color: white;
   background-image: url("img/spam.png");
-  background-position: 613px 1624px;
   background-size:auto;
   background-repeat: repeat;
+  position:relative;
+
+}
+.follow-us-af::after {
+  content:"";
+  position:absolute;
+  background-color: red;
+  width: calc(100% - 10px) ;
+  height: calc(100% - 10px);
+  left:5px;
+  top:5px;
 }
