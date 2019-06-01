@@ -11,11 +11,11 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
-        <img src="img/logo.svg" width="111" height="24" alt="GlaccyShop">
+        <img src="img/logo.svg" width="154" height="64" alt="GlaccyShop">
       </a>
       <ul class="site-navigation">
          <li><a href="glaccy-catalog.html">Каталог</a>
-           <ul>
+           <ul class="header-menu-catalog">
              <li><b>Новинки</b></li>
              <li>Сливочное</li>
              <li>Щербеты</li>
@@ -27,11 +27,17 @@
         <li><a href="#">Прайс-лист</a></li>
       </ul>
       <ul class="user-navigation">
+        <li class="search">
+          <a href="#">поиск</a>
+          <form class="search-search" action="https://echo.htmlacademy.ru" method="post">
+            <input type="search" name="search" placeholder="Что ищем?">
+          </form>
+        </li>
         <li>
-          <div class="login">
           <a class="login-link" href="login.html">
             Вход
           </a>
+          <div class="login">
             <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
               <label  class="visually-hidden" for="user-login">Логин</label>
               <input class="login-icon-user" type="text" name="loginuser" id="user-login"
@@ -44,19 +50,13 @@
             </form>
           </div>
         </li>
-        <li class="search">
-          <a href="#">поиск</a>
-              <form class="search-search" action="https://echo.htmlacademy.ru" method="post">
-                <input type="search" name="search" placeholder="Что ищем?">
-              </form>
-        </li>
         <li class="bascet"><a href="#">корзина</a></li>
       </ul>
-      <p class="working time">
-        <span>С 10 до 20, ежедневно</span>
-       <span>8 812 450-25-25</span>
-      </p>
     </nav>
+    <p class="working-time">
+      <span>С 10 до 20, ежедневно</span>
+      <span>8 812 450-25-25</span>
+    </p>
   </header>
   <div>
     <img src="img/glaccy.png" width="1079px" height="854px" alt="ice">
@@ -122,7 +122,7 @@
           <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
         </li>
         <li>
-        <img src="img/4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+        <img src="img/4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
         <div>
             <span class="price">
             415
@@ -136,35 +136,39 @@
     <section class="advantage">
       <h2 class="visually-hidden">Преимущества </h2>
       <span class="about">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</span>
-      <ul>
-         <li>
+      <div class="advantage-list">
+        <ul class="advantage-list1">
+          <li>
             <span class="advantage-icon"></span>
             <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
             </p>
-         </li>
-        <li>
-          <span class="advantage-icon"></span>
-          <p>
+          </li>
+          <li>
+            <span class="advantage-icon"></span>
+            <p>
             Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-          </p>
-        </li>
-        <li>
-        <span class="advantage-icon"></span>
-        <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
-        </p>
-      </li>
-        <li>
-          <span class="advantage-icon"></span>
-          <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
-          </p>
-        </li>
-      </ul>
+            </p>
+          </li>
+        </ul>
+        <ul class="advantage-list2">
+          <li>
+            <span class="advantage-icon"></span>
+            <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+            </p>
+          </li>
+          <li>
+            <span class="advantage-icon"></span>
+            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+            </p>
+          </li>
+        </ul>
+      </div>
     </section>
-
-    <section class="follow-us">
+   <div class="container">
+      <section class="follow-us">
         <h3>Новое в нашем блоге</h3>
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-    </section>
+      </section>
       <section class="follow-us-af">
         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)
@@ -174,6 +178,7 @@
       <!--форма-->
         </form>
       </section>
+   </div>
     <div>
       <form class="feedback" action="https://echo.htmlacademy" method="post" aria-label="Форма обратной связи">
         <p><b>Мы обязательно ответим вам!</b></p>
@@ -191,23 +196,23 @@
     </div>
   </main>
   <footer class="main-footer">
-    <ul>
-      <li><a class="social-button" href="#">Твитер</a></li>
-      <li><a class="social-button" href="#">Вконтакте</a></li>
-      <li><a class="social-button" href="#">Фейсбук</a></li>
-      <li><a class="social-button" href="#">Инстаграм</a></li>
-    </ul>
-     <div>
-        <ul>
+        <ul class="footer-list">
+          <li><a class="social-button" href="#">Твитер</a></li>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+        <ul class="footer-info">
           <li><a href="#"> <span class="icon"></span>Для поставщиков</a></li>
           <li><a href="#">О производстве</a></li>
           <li><a href="#">Наши продукты</a></li>
           <li><a href="#">Экологические стандарты</a></li>
         </ul>
-     </div>
+
+    <div class="footer-copyright">
     <img class="Html Academy" src="img/logo-htmlacademy.svg" width="108" height="38" alt="Сделано в HTML Academy">
     <a  href="https://htmlacademy.ru">Сделано в HTML Academy</a>
-
+    </div>
   </footer>
   </body>
 </html>
