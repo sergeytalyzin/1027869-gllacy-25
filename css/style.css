@@ -204,7 +204,8 @@ h1 {
 .main-header {
   padding: 0;
   display:flex;
-  width:auto;
+  width: 1146px;
+  margin:0 auto;
   border: 2px solid yellow;
   flex-direction: column;
   justify-content: flex-start;
@@ -218,6 +219,7 @@ h1 {
   border:1px solid green;
   flex-direction: column;
   align-items: flex-end;
+  margin:0;
   margin-right:27px;
 }
 .header-menu-catalog,
@@ -231,17 +233,14 @@ h1 {
   border:1px solid black;
   margin-right:27px;
   margin-left:auto;
-  justify-content:space-between;
-  width:312;
-  height:33;
+  width:312px;
+
 }
 .site-navigation {
   padding:0;
   min-width: 349px;
-  height: 15px;
   display:flex;
-  border:1px solid black;
-  justify-content: space-between;
+  border:1px solid blue;
 }
 .main-header-logo {
   margin-left:27px;
@@ -249,13 +248,26 @@ h1 {
 }
 /* ДЕЛАЕМ Main   на Флексах */
 .hits-list {
+  width:1146px;
+  margin:0 auto;
   display:flex;
   justify-content: space-around;
+
 }
 
 
 .visually-hidden {
-  display:none;
+  position:absolute;
+  width: 1px;
+  height: 1px;
+  margin:-1px;
+  padding:0;
+  border:none;
+  overflow: hidden;
+  white-space:nowrap;
+  clip:rect(0,0,0,0);
+  -webkit-clip-path:inset(100%);
+  clip-path: inset(100%);
 }
 
 .advantage {
@@ -313,7 +325,6 @@ h1 {
   list-style:none;
   display:flex;
   width:326px;
-  height:36px;
   border:1px solid black;
   flex-wrap:wrap;
 }
@@ -326,4 +337,25 @@ h1 {
   flex-wrap:wrap;
   justify-content:column;
 }
+/*Каталог на флексах */
+.search-catalog {
 
+display:none;
+}
+.goods-list {
+  margin:0 auto;
+  display:flex;
+  flex-wrap: wrap;
+  width:1200px;
+}
+
+.goods-list li {
+  margin:0;
+  border:1px solid black;
+  
+}
+.bredcrumbs {
+  display:flex;
+
+
+}
