@@ -58,42 +58,66 @@
       <span>8 812 450-25-25</span>
     </p>
   </header>
-  <div>
-    <img src="img/glaccy.png" width="1079px" height="854px" alt="ice">
-    <a class="button" href="#">Добавить оба</a>
+  <!--СЛАЙДЕР-->
+  <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+  <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+  <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+  <div class="site-wrapper">
+    <div class="container">
+      <section class="slider">
+        <div class="slider-controls">
+          <label for="product-1">Первый</label>
+          <label for="product-2">Второй</label>
+          <label for="product-3">Третий</label>
+        </div>
+        <ul class="slider-list">
+          <li class="slider-item slide" id="slide1">
+            <h3 class="slide-title">
+              Крем-брюле и пломбир с малиновым джемом
+            </h3>
+            <a class="button slide-button" href="#">Давайте оба!</a>
+          </li>
+          <li class="slider-item slide" id="slide2">
+            <h3 class="slide-title">
+              Шоколадный пломбир и лимонный сорбет
+            </h3>
+            <a class="button slide-button" href="#">Давайте оба!</a>
+          </li>
+          <li class="slider-item slide" id="slide3">
+            <h3 class="slide-title">
+              Пломбир с помадкой и клубничный щербет
+            </h3>
+            <a class="button slide-button" href="#">Давайте оба!</a>
+          </li>
+        </ul>
+      </section>
+    </div>
   </div>
-  <div>
-    <img src="img/glaccy2.png" width="1079px" height="854px" alt="ice">
-    <a class="button" href="#">Добавить оба</a>
-  </div>
-  <div>
-    <img src="img/glaccy3.png" width="1079px" height="854px" alt="ice">
-    <a class="button" href="#">Добавить оба</a>
-  </div>
-  <main>
+  <!--КОНЕЦ СЛАЙДЕР-->
+  <main class="main-container">
     <h1 class="visually-hidden">Магазин мороженного «Глейси» </h1>
     <section class="offers">
-      <ul>
-       <li class="Rassbery">
+      <ul class="offers-list">
+       <li class="rassbery">
          <h2>Малинка даром!</h2>
          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
          </p>
-         <a class="offers-button" href="#">Хочу варенье</a>
+         <a class="button button-rassbery" href="#">Хочу варенье</a>
        </li>
         <li class="chocolate">
           <h2>Шоколадки даром!</h2>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
           </p>
-          <a class="offers-button" href="#">Хочу шоколадки</a>
+          <a class="button button-chocolate" href="#">Хочу шоколадки</a>
         </li>
       </ul>
     </section>
     <section class="hits">
-      <h2 class="hidden">Хиты</h2>
+      <h2 class="visually-hidden">Хиты</h2>
       <ul class="hits-list">
         <li>
           <img src="img/1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-          <div>
+          <div class="main-price">
              <span class="price">
                  310
              </span>
@@ -103,7 +127,7 @@
         </li>
         <li>
           <img src="img/2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-          <div>
+          <div class="main-price">
             <span class="price">
             380
             </span>
@@ -113,21 +137,21 @@
         </li>
         <li>
           <img src="img/3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-          <div>
+          <div class="main-price">
             <span class="price">
             355
             </span>
             <span class="price-parameters"><span class="rub">₽</span>/кг</span>
-          </div>
+          </div class="main-price">
           <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
         </li>
         <li>
         <img src="img/4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-        <div>
+        <div class="main-price">
             <span class="price">
             415
             </span>
-          <span class="price-parameters">₽/кг</span>
+          <span class="price-parameters"><span class="rub">₽</span>/кг</span>
         </div>
         <p>Сливочное крем-брюле с карамельной подливкой</p>
       </li>
@@ -136,35 +160,27 @@
     <section class="advantage">
       <h2 class="visually-hidden">Преимущества </h2>
       <span class="about">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</span>
-      <div class="advantage-list">
         <ul class="advantage-list1">
           <li>
-            <span class="advantage-icon"></span>
             <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
             </p>
           </li>
           <li>
-            <span class="advantage-icon"></span>
             <p>
             Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
             </p>
           </li>
-        </ul>
-        <ul class="advantage-list2">
           <li>
-            <span class="advantage-icon"></span>
             <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
             </p>
           </li>
           <li>
-            <span class="advantage-icon"></span>
             <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
             </p>
           </li>
         </ul>
-      </div>
     </section>
-   <div class="container">
+   <div class="container-blog">
       <section class="follow-us">
         <h3>Новое в нашем блоге</h3>
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
@@ -180,7 +196,7 @@
       </section>
    </div>
     <div>
-      <form class="feedback" action="https://echo.htmlacademy" method="post" aria-label="Форма обратной связи">
+      <form style="display:none; class="feedback" action="https://echo.htmlacademy" method="post" aria-label="Форма обратной связи">
         <p><b>Мы обязательно ответим вам!</b></p>
         <label сlass="visually-hidden" for="noname">Имя</label>
         <input type="text" name="name" id="noname" placeholder="Как вас зовут">
@@ -194,19 +210,26 @@
         <!--Форма Обратной связи-->
       </form>
     </div>
+    <section class="map">
+      <img src="img/map.jpg" width="1200px" height="430px" alt="Карта ">
+    </section>
   </main>
   <footer class="main-footer">
         <ul class="footer-list">
-          <li><a class="social-button" href="#">Твитер</a></li>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="social-button tw" href="#" aria-label="Твитер"></a></li>
+          <li><a class="social-button inst" href="#" aria-label="Инстаграмм"></a></li>
+          <li><a class="social-button fb" href="#" aria-label="Фейсбук"></a></li>
+          <li><a class="social-button vk" href="#" aria-label="Вконтакте"></a></li>
         </ul>
         <ul class="footer-info">
-          <li><a href="#"> <span class="icon"></span>Для поставщиков</a></li>
-          <li><a href="#">О производстве</a></li>
-          <li><a href="#">Наши продукты</a></li>
-          <li><a href="#">Экологические стандарты</a></li>
+          <li>
+            <a href="#">Для поставщиков</a>
+            <a href="#">О производстве</a>
+          </li>
+          <li>
+            <a href="#">Наши продукты</a>
+            <a href="#">Экологические стандарты</a>
+          </li>
         </ul>
 
     <div class="footer-copyright">
