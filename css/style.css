@@ -83,6 +83,10 @@ a {
 .user-navigation {
   list-style:none;
 }
+.active {
+  background-color: #d07058;
+  border-radius:50px;
+}
 
 .site-navigation a,
 .user-navigation a {
@@ -91,14 +95,61 @@ a {
   color:#ffffff;
   border-radius:50px ;
 }
-
 .site-navigation a:hover,
-.site-navigation a:focus,
+.site-navigation a:focus {
+  background-color: #f7f6f3;
+  color: #323232;
+}
 .user-navigation a:hover,
 .user-navigation a:focus {
-
-  background-color:#d07058;
+  background-color: #f7f6f3;
+  color: #323232;
 }
+.site-navigation a:active {
+  box-shadow: inset 0 2px 1px #696969;
+  background-color: #ededed;
+}
+.site-navigation > li {
+  position: relative;
+}
+.site-navigation .header-menu-catalog {
+  list-style:none;
+  position: absolute;
+  border-radius:5px;
+  margin: 0;
+  padding-left: 6px;
+  padding-right:9px;
+  width: 143px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+}
+.header-menu-catalog a {
+  padding-left: 0;
+  white-space: nowrap;
+  border-radius:0;
+  color: #323232;
+}
+.header-menu-catalog li {
+  padding-left: 15px;
+  margin:0;
+  color: #323232;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+
+}
+.site-navigation > li:hover .header-menu-catalog {
+  display:block;
+}
+.header-menu-catalog li:first-child {
+  border-bottom:1px solid rgba(0, 0, 0, 0.4);
+  margin-bottom: 5px;
+  font-weight:700;
+}
+
+
+
+
 /*раздел  Преимущества(главная )*/
 
 .advantage .about {
@@ -116,8 +167,8 @@ a {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  margin:0px;
-  padding: 0px;
+  margin:0;
+  padding: 0;
 
 }
 
@@ -265,7 +316,7 @@ a {
 
 .bredcrumbs a:hover,
 .bredcrumbs a:focus {
-  padding: 0px 10px;
+  padding: 0 10px;
   background-color:#d07058;
 }
 
@@ -334,7 +385,7 @@ h1 {
   margin:0;
   margin-right:27px;
 }
-.header-menu-catalog,
+
 .login,
 .search-search {
   display:none;
@@ -342,6 +393,7 @@ h1 {
 .user-navigation {
   padding:0;
   display:flex;
+  flex-wrap: wrap;
   margin-bottom: 20px;
   margin-right:27px;
   margin-left:auto;
@@ -350,10 +402,13 @@ h1 {
 
 }
 .site-navigation {
+  position:relative;
+  z-index: 1;
   padding:0;
   min-width: 349px;
   display:flex;
   justify-content: space-between;
+
 
 }
 .main-header-logo {
@@ -442,10 +497,10 @@ h1 {
   display:flex;
   width:170px;
   justify-content: space-between;
-  margin:0px;
+  margin:0;
   margin-left: 30px;
   margin-top:0 px;
-  padding: 0px;
+  padding: 0;
   list-style:none;
   flex-wrap:wrap;
 }
@@ -486,8 +541,8 @@ h1 {
   display:flex;
   justify-content:space-between;
   align-content: flex-start;
-  margin:0px;
-  padding:0px;
+  margin:0;
+  padding:0;
   margin-left:236px;
   width:305px;
   flex-wrap:wrap;
@@ -538,8 +593,14 @@ display:none;
   text-align:center;
 }
 .bredcrumbs {
-  padding-left:27px;
   display:flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-left:27px;
+  margin-top: -25px;
+}
+.bredcrumbs li {
+  margin-right:15px;
 }
 
 
