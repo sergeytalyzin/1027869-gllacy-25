@@ -81,25 +81,40 @@
         </div>
         <div>
           <p>Жирность:</p>
-            <div class="fat-content">
-              <label class="radio-fat-content">
-                <input type="radio" name="radio">
-                  0%
-                </label>
-                <label class="radio-fat-content">
-                  <input type="radio" name="radio">
-                  до 10%
-                </label>
-                <label class="radio-fat-content">
-                  <input type="radio" name="radio">
-                  до 30%
-                </label>
-                <label class="radio-fat-content">
-                  <input type="radio" name="radio">
-                  выше 30%
-                </label>
-            </div>
+          <div class="fat-content">
+            <input id="fat-radio1" type="radio" name="radio" class="visually-hidden">
+            <label for="fat-radio1" class="radio-fat-content"> 0%</label>
+
+            <input id="fat-radio2" type="radio" name="radio" class="visually-hidden">
+            <label for="fat-radio2" class="radio-fat-content"> до 10%</label>
+
+            <input id="fat-radio3" type="radio" name="radio" class="visually-hidden">
+            <label for="fat-radio3" class="radio-fat-content"> до 30%</label>
+
+            <input id="fat-radio4" type="radio" name="radio" class="visually-hidden">
+            <label for="fat-radio4" class="radio-fat-content"> выше 30%</label>
+          </div>
         </div>
+        <div>
+          <p>Наполнители:</p>
+          <div class="fillers">
+            <input id="fillers-checkbox-1" type="checkbox" name="checkbox" class="visually-hidden">
+            <label for="fillers-checkbox-1" class="click">шоколадные</label>
+
+            <input id="fillers-checkbox-2" type="checkbox" name="checkbox" class="visually-hidden">
+            <label for="fillers-checkbox-2" class="click">сахарные присыпки</label>
+
+            <input id="fillers-checkbox-3" type="checkbox" name="checkbox" class="visually-hidden">
+            <label for="fillers-checkbox-3" class="click">фрукты</label>
+
+            <input id="fillers-checkbox-4" type="checkbox" name="checkbox" class="visually-hidden">
+            <label for="fillers-checkbox-4" class="click">сиропы</label>
+
+            <input id="fillers-checkbox-5" type="checkbox" name="checkbox" class="visually-hidden">
+            <label for="fillers-checkbox-5" class="click">джемы</label>
+          </div>
+        </div>
+        <button class="button button-filters" type="submit">Применить</button>
 
 
 
