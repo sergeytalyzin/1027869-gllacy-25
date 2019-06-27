@@ -64,7 +64,7 @@
       <h2 class="visually-hidden">Фильтр товаров</h2>
 
       <form class="filters"  action="https://echo.htmlacademy" method="post">
-        <div class="select">
+        <div class="filters-select">
           <p> Сортировка:</p>
           <select class="style-select">
             <option value="hit">по полулярности</option>
@@ -73,13 +73,13 @@
             <option value="fat-content">по жирности</option>
           </select>
         </div>
-        <div>
+        <div class="filters-range">
           <p>Цена: 100руб.-500руб.</p>
           <div class="style-doublerange">
             <span class="doublerange"></span>
           </div>
         </div>
-        <div>
+        <div class="filters-radio">
           <p>Жирность:</p>
           <div class="fat-content">
             <input id="fat-radio1" type="radio" name="radio" class="visually-hidden">
@@ -95,7 +95,7 @@
             <label for="fat-radio4" class="radio-fat-content"> выше 30%</label>
           </div>
         </div>
-        <div>
+        <div class="filters-checkbox">
           <p>Наполнители:</p>
           <div class="fillers">
             <input id="fillers-checkbox-1" type="checkbox" name="checkbox" class="visually-hidden">
@@ -125,16 +125,21 @@
       <h2 class="visually-hidden">Выбор Мороженного</h2>
       <ul class="goods-list">
         <li>
-          <img src="img/1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-          <div class="main-price">
-            <span class="price">
-            310
-            </span>
-            <span class="price-parameters"><span class="rub">₽</span>/кг</span>
+          <div class="h">
+            <img src="img/1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <div class="main-price">
+              <span class="price">
+              310
+              </span>
+              <span class="price-parameters"><span class="rub">₽</span>/кг</span>
+            </div>
+            <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
           </div>
-          <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-         </li>
-         <li>
+          <div class="s">
+          <button class="button button-goods-list" type="submit">Быстрый просмотр</button>
+          </div>
+        </li>
+        <li>
            <img src="img/2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
            <div class="main-price">
                <span class="price">
@@ -247,11 +252,13 @@
     </li>
     </ul>
     <ul class="pagination-list">
-      <li class="pagination-item pagination-item-current"><a>1</a></li>
-      <li class="pagination-item"><a href="#">2</a></li>
+      <li class="back"  ><a><svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#C1C6CE" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/></svg></a></li>
+      <li class="pagination-item pagination-active"><a>1</a></li>
+      <li class="pagination-item "><a href="#">2</a></li>
       <li class="pagination-item"><a href="#">3</a></li>
       <li class="pagination-item"><a href="#">4</a></li>
       <li class="pagination-item"><a href="#">5</a></li>
+      <li class="next"  ><a><svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#C1C6CE" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/></svg></a></li>
     </ul>
     </section>
 

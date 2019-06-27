@@ -396,7 +396,6 @@ a {
   width: 129px;
   margin-left:11px;
   margin-top:37px;
-
 }
 /*Страница каталога*/
 .working-time span:nth-child(1) {
@@ -404,25 +403,18 @@ a {
   line-height:16px;
   padding-bottom: 8px;
 }
-
 .working-time span:nth-child(2) {
   font-size:22px;
   line-height:24px;
 }
-
 .bredcrumbs {
   list-style:none;
-
   font-size:14px;
   line-height:16px;
 }
-
 .bredcrumbs a {
   color:#ffffff;
-
-
 }
-
 .bredcrumbs a:hover,
 .bredcrumbs a:focus {
   padding: 0 10px;
@@ -430,9 +422,163 @@ a {
 }
 
 h1 {
+  margin:0;
+  margin-bottom: 22px;
+  margin-left: 27px;
   font-size: 35px;
   line-height: 41px;
 }
+/*Фильтры*/
+.filters {
+  display:flex;
+  flex-wrap: wrap;
+  align-items:flex-end;
+  margin-bottom: 40px;
+  margin-left:27px;
+
+}
+.filters p {
+  padding:0;
+  margin:0;
+  padding-left: 16px;
+  margin-bottom: 6px;
+}
+.filters-select,
+.filters-range,
+.filters-radio,
+.filters-checkbox {
+  margin-right: 14px;
+}
+/*СЕЛЕКТ */
+.style-select {
+  border-radius:50px;
+  padding:7px 15px;
+  border:0px solid transparent;
+  background-color:#a1b6ab;
+  color:#ffffff;
+}
+.style-select:focus,
+.style-select:hover {
+  color:#323232;
+}
+.style-select:active {
+  color:#323232;
+  background-color:#ffffff;
+}
+/*КОНЕЦ СЕЛЕКТ */
+.style-doublerange {
+  display: flex;
+  border-radius:50px;
+  background-color:#a1b6ab;
+  width: 220px;
+  height: 37px;
+  justify-content: center;
+  align-items:center;
+}
+.doublerange {
+  width: 176px;
+  height: 4px;
+  position: relative;
+  background-color: rgba(248,247,244,0.5);
+}
+.doublerange::before,
+.doublerange::after {
+  content:"";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border:8px solid white;
+  border-radius:50%;
+}
+.doublerange::before {
+  top:-8px;
+  left:35px;
+}
+.doublerange::after {
+  top:-8px;
+  left:133px;
+}
+/*РАДИО КНОПКИ */
+.fat-content {
+  display: flex;
+  align-items: center;
+  width: 415px;
+  height: 37px;
+  background-color:#a1b6ab;
+  border-radius:50px;
+}
+.radio-fat-content {
+  position: relative;
+  margin-left:50px;
+}
+.radio-fat-content::before {
+  content:"";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left:-30px;
+  border-radius:50%;
+  border:4px solid rgba(255,255,255,0.8);
+}
+.fat-content input[type="radio"]:checked  + .radio-fat-content::after {
+  content:"";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left:-23px;
+  top:7px;
+  border-radius:50%;
+  border:4px solid rgba(255,255,255,0.8);
+}
+/*КОНЕЦ РАДИО КНОПКИ */
+/*ЧЕКБОХ */
+.fillers {
+  display: flex;
+  flex-wrap:nowrap;
+  align-items: center;
+  width: 703px;
+  height: 37px;
+  background-color:#a1b6ab;
+  border-radius:50px;
+}
+.click {
+  position: relative;
+  margin-left:50px;
+}
+.click::before {
+  content:"";
+  position: absolute;
+  width: 24px;
+  height: 20px;
+  background-image:url("../img/checkbox-off.svg");
+  background-size:100% 100%;
+  left:-30px;
+}
+.fillers input[type="checkbox"]:checked + .click::before {
+  background-image:url("../img/checkbox-on.svg");
+}
+.filters .button-filters {
+  font-size: 16px;
+  line-height: 1.13;
+  width: 144px;
+  padding:7px 30px;
+  box-shadow:none;
+  border:2px solid #ffffff;
+  background-color:#a1b6ab;
+  background-image:none;
+}
+.button-filters:focus,
+.button-filters:hover {
+  background-color: #ffffff;
+  color:#000000;
+}
+.button-filters:active {
+  box-shadow: inset 0px 2px 1px 0 #696969;
+  background-color: #ededed;
+  border:0px solid transparent;
+}
+/* КОНЕЦ ФИЛЬТРЫ */
+/* КОНЕЦ ФИЛЬТРЫ */
 
 .goods-list {
   list-style:none;
@@ -739,7 +885,53 @@ display:none;
 .bredcrumbs li {
   margin-right:15px;
 }
+/* Нумерация страниц*/
+                  /* Нумерация страниц*/
+.pagination-list {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 55px;
+}
+.pagination-list li {
+  list-style: none;
+  margin-left:5px;
+}
+.pagination-item {
+  display: flex;
 
+}
+.pagination-list a {
+  text-align: center;
+  width: 27px;
+  height: 27px;
+  padding-top:3px;
+  border-radius:50%;
+  color:#ffffff;
+}
+.pagination-active a  {
+  color:#000000;
+  background-color: #ffffff;
+}
+.pagination-list a:focus,
+.pagination-list a:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+.pagination-list a:active {
+  color:#000000;
+  background-color: #ffffff;
+}
+.back  {
+  transform:rotate(180deg);
+  padding-top:3px;
+}
+.next {
+  padding-top:3px;
+}
+.next path {
+  fill:#ffffff;
+}
+/* конец нумерации страниц*/
+                          /*Конец нумерации страниц*/
 
 
 
@@ -896,118 +1088,24 @@ display:none;
 
 
 /* КОНЕЦ СЛАЙДЕР */
-.filters {
+
+.button-goods-list {
   display:flex;
-  flex-wrap: wrap;
-  height:250px ;
-  padding: 10px;
-  border:2px solid black;
-  margin-bottom:40px;
+  margin: 0 auto;
+  border-radius:60px;
 }
-/*СЕЛЕКТ */
-.style-select {
-  border-radius:50px;
-  padding:7px 15px;
-  border:0px solid transparent;
-  background-color:#a1b6ab;
-  color:#ffffff;
+.s {
+  display: none;
+
 }
-/*КОНЕЦ СЕЛЕКТ */
-.style-doublerange {
-  display: flex;
-  border-radius:50px;
-  background-color:#a1b6ab;
-  width: 220px;
-  height: 37px;
-  justify-content: center;
-  align-items:center;
+.goods-list .h:focus,
+.goods-list .h:hover {
+  background-color: rgba(255,255,255,0.2);
 }
-.doublerange {
-  width: 176px;
-  height: 4px;
-  position: relative;
-  background-color: rgba(248,247,244,0.5);
-}
-.doublerange::before,
-.doublerange::after {
-  content:"";
+.goods-list .h:hover + .s {
+  display:block;
   position: absolute;
-  width: 20px;
-  height: 20px;
-  border:8px solid white;
-  border-radius:50%;
+  background-color: rgba(255,255,255,0.2);
+  z-index: 10;
 }
-.doublerange::before {
-  top:-8px;
-  left:35px;
-}
-.doublerange::after {
-  top:-8px;
-  left:133px;
-}
-/*РАДИО КНОПКИ */
-.fat-content {
-  display: flex;
-  align-items: center;
-  width: 415px;
-  height: 37px;
-  background-color:#a1b6ab;
-  border-radius:50px;
-}
-.radio-fat-content {
-  position: relative;
-  margin-left:50px;
-}
-.radio-fat-content::before {
-  content:"";
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  left:-30px;
-  border-radius:50%;
-  border:4px solid rgba(255,255,255,0.8);
-}
-.fat-content input[type="radio"]:checked  + .radio-fat-content::after {
-  content:"";
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  left:-23px;
-  top:7px;
-  border-radius:50%;
-  border:4px solid rgba(255,255,255,0.8);
-}
-/*КОНЕЦ РАДИО КНОПКИ */
-/*ЧЕКБОХ */
-.fillers {
-  display: flex;
-  flex-wrap:nowrap;
-  align-items: center;
-  width: 703px;
-  height: 37px;
-  background-color:#a1b6ab;
-  border-radius:50px;
-}
-.click {
-  position: relative;
-  margin-left:50px;
- }
-.click::before {
-  content:"";
-  position: absolute;
-  width: 24px;
-  height: 20px;
-  background-image:url("../img/checkbox-off.svg");
-  background-size:100% 100%;
-  left:-30px;
-}
-.fillers input[type="checkbox"]:checked + .click::before {
-  background-image:url("../img/checkbox-on.svg");
-}
-.filters .button-filters {
-  font-size: 16px;
-  line-height: 1.13;
-  width: 144px;
-  height: 37px;
-  background-color:black ;
-}
+
