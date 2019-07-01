@@ -374,6 +374,7 @@ a {
   margin-left:27px;
 }
 .map {
+  position: relative;
   width:1146px;
   margin:0 auto;
 
@@ -869,10 +870,6 @@ h1 {
   margin-right: 30px;
 }
 /*Каталог на флексах */
-.search-catalog {
-
-display:none;
-}
 .goods-list {
   margin:0 auto;
   display:flex;
@@ -1129,6 +1126,7 @@ display:none;
 
 
 /* КОНЕЦ СЛАЙДЕР */
+/*модалка вход */
 .modal {
   position: fixed;
   color: #323232;
@@ -1136,11 +1134,12 @@ display:none;
   background-color: #f8f7f4;
 }
 .modal-login {
+  display: none;
   width: 277px;
   height: 214px;
   border-radius: 5px;
   top: 60px;
-  left:790px;
+  left:930px;
   padding: 0 18px;
 
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -1152,7 +1151,6 @@ display:none;
 }
 .container-login p {
   margin:0;
-  margin-bottom: 0px;
   margin-left:20px;
 }
 .button-login {
@@ -1175,15 +1173,7 @@ display:none;
   font-size: 14px;
   line-height: 1.71;
 }
-input::-moz-placeholder {
-  color:#999999;
-}
-input::-webkit-input-placeholder {
-  color:#999999;
-}
-input::-ms-input-placeholder {
-  color:#999999;
-}
+
 .modal-login-info a {
   margin:0;
   padding:0;
@@ -1193,7 +1183,228 @@ input::-ms-input-placeholder {
   text-align: left;
   text-decoration:underline;
   color: #323232;
+  background: none;
 }
 .container-login {
   display: flex;
+}
+.login-link:hover .modal-login {
+  display: block;
+}
+/*модалка вход конец*/
+
+/*Модалка поиск*/
+.modal-search {
+  display: none;
+  width: 341px;
+  height: 84px;
+  top:60px;
+  left:770px;
+  padding: 20px 15px;
+  border-radius: 5px;
+
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+}
+.modal-search input[type="search"] {
+  width: 311px;
+  height: 44px;
+  padding: 15px;
+  border-radius: 5px;
+  border: solid 1px #d3d3d2;
+  background-color: #ffffff;
+}
+.search:hover .modal-search {
+  display: block;
+}
+/*Модалка поиск конец*/
+/*модалка обратной связи*/
+.modal-feedback {
+  position: absolute;
+  width: 302px;
+  height: 305px;
+  padding: 32px 25px;
+  border-radius:5px;
+  top:60px;
+  right:100px;
+  background-color: #ffffff;
+}
+.modal-feedback p {
+  margin:0;
+  margin-right: 30px;
+  margin-bottom: 23px;
+  word-wrap:break-word;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.43;
+  text-align: left;
+  color: #323232;
+}
+
+.modal-feedback b {
+  font-size: 18px;
+  display: block;
+}
+.feedback-info {
+  display: block;
+  width: 148px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.43;
+  text-align: left;
+  color: #323232;
+}
+/*Модалка обратной связи открытая*/
+.modal-feedback-open {
+  width: 478px;
+  height: 443px;
+  top:150px;
+  left:300px;
+  border-radius: 10px;
+  background-color: #f8f7f4;
+}
+.modal-feedback-open h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.17;
+  text-align: left;
+  margin:0;
+  margin-top:24px;
+  margin-left:24px;
+  margin-bottom: 15px;
+  color: #323232;
+}
+.modal-feedback-open input[type="text"],
+.modal-feedback-open input[type="email"] {
+  width: 267px;
+  height: 44px;
+  margin-left:24px;
+  padding-top:2px;
+  padding-left:15px;
+
+  border: solid 1px rgba(178, 178, 178, 0.52);
+  background-color: #ffffff;
+  border-radius:5px;
+}
+.modal-feedback-open p {
+  margin:0;
+  padding:0;
+  margin-bottom: 20px;
+}
+.textarea {
+  width: 428px;
+  height: 155px;
+  border: solid 1px rgba(178, 178, 178, 0.52);
+  background-color: #ffffff;
+  border-radius:5px;
+  margin-left:24px;
+  padding-top:13px;
+  padding-left:15px;
+  color: #999999;
+}
+.button-fb-open {
+  width: 139px;
+  margin-left:314px;
+  margin-top:20px;
+}
+.textarea:hover {
+  border: solid 2px rgba(154, 154, 154, 0.52);
+}
+.textarea:focus {
+  border: solid 2px rgba(46, 136, 228, 0.52);
+  color:#323232;
+}
+/*модалка корзина*/
+.modal-bascet {
+  width: 540px;
+  height: 242px;
+  top:60px;
+  left:350px;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+}
+.modal-bascet table{
+  padding:0;
+  margin:0;
+
+}
+.modal-bascet td {
+
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.23;
+  text-align: left;
+
+  color: #323232;
+}
+.modal-bascet th {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: right;
+  padding-top:20px;
+  padding-right: 15px;
+}
+.first-tr td {
+  padding-top:20px;
+}
+.first-tr td:first-child {
+  width:74px;
+  text-align: right;
+}
+.first-tr td:nth-child(2) {
+  width:235px;
+  padding-left:15px;
+}
+.first-tr td:nth-child(3) {
+  padding-left:20px;
+}
+.first-tr td:nth-child(4) {
+  width:80px;
+}
+.second-tr td {
+  vertical-align: top;
+  padding-top:23px;
+}
+.second-tr td:nth-child(1){
+  width:74px;
+  text-align: right;
+  padding-top:18px;
+}
+.second-tr td:nth-child(2) {
+  padding-left:15px;
+}
+.second-tr td:nth-child(3) {
+  padding-left:20px;
+}
+.button-bascet {
+  width: 170px;
+  margin-top:10px;
+  margin-left: 330px;
+  padding: 10px 13px;
+  font-size: 18px;
+}
+.bascet-catalog a {
+  font-size: 14px;
+  color:#323232;
+  background-color: #f8f7f4;
+}
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="text"]:hover {
+  border: solid 2px rgba(154, 154, 154, 0.52);
+}
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+  border: solid 2px rgba(46, 136, 228, 0.52);
+}
+input::-moz-placeholder {
+  color:#999999;
+}
+input::-webkit-input-placeholder {
+  color:#999999;
+}
+input::-ms-input-placeholder {
+  color:#999999;
 }
