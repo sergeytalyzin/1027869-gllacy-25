@@ -94,6 +94,7 @@ a {
   color:#ffffff;
   border-radius:50px ;
 }
+
 .site-navigation a:hover,
 .site-navigation a:focus {
   background-color: #f7f6f3;
@@ -174,8 +175,12 @@ a {
   align-items: center;
   background-color:#a1b6ab;
   padding:7px 16px;
-
-
+}
+.bascet-index a {
+  padding-right: 18px;
+}
+.user-navigation .bascet-index {
+  margin-right:2px;
 }
 .search .user-navigation-search {
   padding:8px;
@@ -634,7 +639,7 @@ h1 {
   display:flex;
   width: 1200px;
   margin:0 auto;
-  padding-top:8px;
+  padding-top:6px;
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -655,11 +660,14 @@ h1 {
   flex-direction:row;
   flex-wrap: wrap;
   margin-bottom: 20px;
-  margin-right:27px;
+  margin-right:20px;
   margin-left:auto;
   width:254px;
   justify-content: space-between;
-
+}
+.login-link svg,
+.bascet svg {
+  margin-right: 5px;
 }
 .site-navigation {
   position:relative;
@@ -673,7 +681,7 @@ h1 {
 }
 .main-header-logo {
   margin-left:27px;
-  margin-right:24px;
+  margin-right:13px;
 }
 /* ДЕЛАЕМ Main   на Флексах */
 .offers {
@@ -1130,7 +1138,7 @@ h1 {
 .modal {
   position: fixed;
   color: #323232;
-  display: block;
+  display: none;
   background-color: #f8f7f4;
 }
 .modal-login {
@@ -1313,69 +1321,76 @@ h1 {
   border: solid 2px rgba(46, 136, 228, 0.52);
   color:#323232;
 }
+.feedback-close{
+  position: relative;
+}
+.feedback-close::before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  top:-335px;
+  left:-5px;
+  position: absolute;
+  background-image: url("../img/close.svg") ;
+  background-repeat: no-repeat;
+}
+
+
+
 /*модалка корзина*/
 .modal-bascet {
   width: 540px;
   height: 242px;
-  top:60px;
-  left:350px;
+  padding-top:20px;
+
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.23;
+  color: #323232;
+  top:70px;
+  left:720px;
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
 }
-.modal-bascet tr{
-  display: flex;
-  padding:0;
-  margin:0;
+.modal-bascet .bascet-delete {
+  width: 40px;
+  text-align: right;
 
 }
-.modal-bascet td {
-  margin:0;
+.bascet-img {
+  width:35px;
+}
+.bascet-name {
+  width:220px;
+}
+.bascet-cost {
+  width:100px;
+}
+.bascet-sum {
+  width: 50px;
+}
+.bascet-delete a  {
   padding:0;
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 1.23;
-  text-align: left;
-
-  color: #323232;
+  background:none;
+  width:11px;
 }
 .modal-bascet th {
-  font-size: 15px;
-  font-weight: bold;
   text-align: right;
   padding-top:20px;
-  padding-right: 15px;
 }
+.modal-bascet td {
+  box-sizing: content-box;
+  padding-left: 10px;
 
+}
 .button-bascet {
-  display:inline-block;
   width: 170px;
-  font-size: 18px;
   white-space: nowrap;
-}
-.user-navigation .bascet-catalog {
-  color:#323232;
-  background-color: #f8f7f4;
-}
-.bascet-catalog svg {
-  margin-right: 5px;
-}
-.clear-bascet a {
-  display: inline-block;
-  padding-top: 30px;
-  padding-left:15px;
-  vertical-align: top;
-  background-color:transparent;
-}
-.bascet-img img {
-  display: inline-block;
+  margin-left:340px;
   margin-top:20px;
 }
-.name-gl {
-  display: block;
-  width: 214px;
-  padding-top:31px;
-}
+
 
 
 
