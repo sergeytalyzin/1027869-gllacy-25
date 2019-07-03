@@ -435,20 +435,22 @@ h1 {
   margin-bottom: 22px;
   margin-left: 27px;
   font-size: 35px;
-  line-height: 41px;
+  line-height: 1.17;
+  letter-spacing:normal;
 }
 /*Фильтры*/
 .filters {
   display:flex;
   flex-wrap: wrap;
   align-items:flex-end;
-  margin-bottom: 40px;
+  margin-bottom: 27px;
   margin-left:27px;
 
 }
 .filters p {
   padding:0;
   margin:0;
+  font-size: 14px;
   padding-left: 16px;
   margin-bottom: 6px;
 }
@@ -457,7 +459,9 @@ h1 {
 .filters-radio,
 .filters-checkbox {
   margin-right: 14px;
+  margin-bottom: 10px;
 }
+
 /*СЕЛЕКТ */
 .style-select {
   border-radius:50px;
@@ -501,11 +505,11 @@ h1 {
 }
 .doublerange::before {
   top:-8px;
-  left:35px;
+  left:10px;
 }
 .doublerange::after {
   top:-8px;
-  left:133px;
+  left:110px;
 }
 /*РАДИО КНОПКИ */
 .fat-content {
@@ -519,6 +523,9 @@ h1 {
 .radio-fat-content {
   position: relative;
   margin-left:50px;
+}
+.radio-fat-content:nth-of-type(1){
+  margin-left: 45px;
 }
 .radio-fat-content::before {
   content:"";
@@ -582,6 +589,7 @@ h1 {
   font-size: 16px;
   line-height: 1.13;
   width: 144px;
+  margin-bottom:11px;
   padding:7px 30px;
   box-shadow:none;
   border:2px solid #ffffff;
@@ -602,10 +610,11 @@ h1 {
 /* КОНЕЦ ФИЛЬТРЫ */
 
 .goods-list {
+  margin-bottom:60px;
   list-style:none;
 }
 
-.goods p {
+.goods a {
   font-weight:500px;
 }
 .price {
@@ -666,8 +675,16 @@ h1 {
   margin-bottom: 20px;
   margin-right:20px;
   margin-left:auto;
-  width:254px;
-  justify-content: space-between;
+  width:290px;
+  justify-content: flex-end;
+}
+.user-navigation-index li {
+  margin-right:4px;
+  margin-left: 6px;
+
+}
+.user-navigation-catalog li {
+  margin-right: 5px;
 }
 .login-link svg,
 .bascet svg {
@@ -793,7 +810,7 @@ h1 {
   display:flex;
   width:1200px;
   margin:0 auto ;
-  padding-top:80px;
+  padding-top:20px;
   background-color:#849d8f;
   justify-content: flex-start;
 }
@@ -853,7 +870,7 @@ h1 {
   align-content: flex-start;
   margin:0;
   padding:0;
-  margin-left:185px;
+  margin-left:188px;
   width:305px;
   flex-wrap:wrap;
 }
@@ -861,10 +878,12 @@ h1 {
   display:flex;
   flex-direction: column;
 
+
 }
 .footer-info a {
   font-size: 13px;
   line-height: 1.38;
+  margin-bottom: 5px;
 }
 .heart-icon {
   position: relative;
@@ -884,11 +903,15 @@ h1 {
   display:flex;
   flex-wrap:wrap;
   align-items: flex-start;
+  font-size: 12px;
   width: 195px;
   height: 60px;
   margin-left:auto ;
   margin-top:-15px;
   margin-right: 20px;
+}
+.footer-copyright img {
+  margin-bottom:5px;
 }
 /*Каталог на флексах */
 .goods-list {
@@ -899,6 +922,7 @@ h1 {
   padding:0;
   padding-left:27px;
   padding-right:27px;
+  margin-bottom: 40px;
 }
 
 .goods-list li {
@@ -932,22 +956,31 @@ h1 {
   display:flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin:0;
   padding-left:27px;
-  margin-top: -25px;
+  margin-top: -10px;
+  margin-bottom: 3px;
 }
 .bredcrumbs li {
-  margin-right:15px;
+  margin-right:8px;
 }
 /* Нумерация страниц*/
                   /* Нумерация страниц*/
 .pagination-list {
   display: flex;
   justify-content: flex-end;
-  margin-right: 55px;
+  margin-right: 27px;
+  margin-bottom: 43px;
 }
 .pagination-list li {
   list-style: none;
-  margin-left:5px;
+  margin-left:2px;
+}
+.pagination-list li:last-of-type{
+  margin-left:15px;
+}
+.pagination-list li:nth-child(2) {
+  margin-left:15px;
 }
 .pagination-item {
   display: flex;
