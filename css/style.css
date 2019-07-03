@@ -179,6 +179,10 @@ a {
 .bascet-index a {
   padding-right: 18px;
 }
+.user-navigation .bascet-catalog {
+  color:#323232;
+  background-color: #f8f7f4;
+}
 .user-navigation .bascet-index {
   margin-right:2px;
 }
@@ -492,7 +496,7 @@ h1 {
   width: 176px;
   height: 4px;
   position: relative;
-  background-color: rgba(248,247,244,0.5);
+  background-image: linear-gradient(to right, rgba(248,247,244,0.5) 15%, #ffffff 15%, #ffffff 65%,rgba(248,247,244,0.5)65%);
 }
 .doublerange::before,
 .doublerange::after {
@@ -1192,13 +1196,13 @@ h1 {
   background-color: #f8f7f4;
 }
 .modal-login {
+  position:absolute;
   width: 277px;
   height: 214px;
   border-radius: 5px;
   top: 60px;
-  left:930px;
+  right:225px;
   padding: 0 18px;
-
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 .login-form p {
@@ -1252,11 +1256,12 @@ h1 {
 
 /*Модалка поиск*/
 .modal-search {
-  display: none;
+  
+  position: absolute;
   width: 341px;
   height: 84px;
   top:60px;
-  left:770px;
+  right:330px;
   padding: 20px 15px;
   border-radius: 5px;
 
@@ -1277,6 +1282,7 @@ h1 {
 /*Модалка поиск конец*/
 /*модалка обратной связи*/
 .modal-feedback {
+  display: block;
   position: absolute;
   width: 302px;
   height: 305px;
@@ -1315,8 +1321,9 @@ h1 {
 .modal-feedback-open {
   width: 478px;
   height: 443px;
-  top:150px;
-  left:300px;
+  top: 50%;
+  left:50%;
+  transform: translate(-240px ,-221px);
   border-radius: 10px;
   background-color: #f8f7f4;
 }
@@ -1445,7 +1452,9 @@ h1 {
   margin-left:340px;
   margin-top:20px;
 }
-
+.modal-show{
+  display: block;
+}
 
 
 

@@ -223,7 +223,7 @@
           <b>8 812 450 25 25</b>
           (с 10 до 20 ежедневно)
         </p>
-        <a class="button" href="form.html">Форма обратной связи</a>
+        <a class="button button-feedback" href="form.html">Форма обратной связи</a>
       </section>
     </section>
   </main>
@@ -250,9 +250,8 @@
     <a  href="https://htmlacademy.ru">Сделано в HTML Academy 2019</a>
     </div>
   </footer>
-
-
   <section class="modal modal-feedback-open" >
+    <!--Форма Обратной связи-->
     <form class="feedback-open" action="https://echo.htmlacademy.ru" method="post" aria-label="Форма обратной связи">
 
       <h2>Мы обязательно ответим вам!</h2>
@@ -267,12 +266,22 @@
       <textarea name="comment" rows="10" cols="15" class="textarea" placeholder="Напишите что-нибудь..."></textarea>
       <button class="feedback-close" type="button" aria-label="закрыть"></button>
       <button class="button button-fb-open" type="submit">Отправить</button>
-    <!--Форма Обратной связи-->
     </form>
   </section>
+  <script>
+    var feedback = document.querySelector(".button-feedback");
+    var popup = document.querySelector(".modal-feedback-open");
+    var close = document.querySelector(".feedback-close");
 
 
-
-
+    feedback.addEventListener("click",function (evt) {
+     evt.preventDefault();
+     popup.classList.add("modal-show");
+    })
+    close.addEventListener("click",function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal-show");
+    })
+  </script>
   </body>
 </html>
