@@ -1255,6 +1255,9 @@ h1 {
 .login-link:hover .modal-login {
   display: block;
 }
+.link-index:hover .modal-login {
+  right: 225px;
+}
 /*модалка вход конец*/
 
 /*Модалка поиск*/
@@ -1281,6 +1284,10 @@ h1 {
 }
 .search:hover .modal-search {
   display: block;
+}
+.search-catalog:hover .modal-search {
+  top:60px;
+  right:345px;
 }
 /*Модалка поиск конец*/
 /*модалка обратной связи*/
