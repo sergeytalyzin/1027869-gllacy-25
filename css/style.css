@@ -702,7 +702,9 @@ h1 {
 
 }
 .user-navigation-catalog li {
+  position: relative;
   margin-right: 5px;
+
 }
 .login-link svg,
 .bascet svg {
@@ -766,8 +768,8 @@ h1 {
   width:267px;
   list-style:none;
   position: relative;
-
 }
+.
 .hits-list a {
   display: inline-block;
   text-align:center;
@@ -888,8 +890,9 @@ h1 {
 .footer-info li {
   display:flex;
   flex-direction: column;
-
-
+}
+.footer-info a:hover {
+  color: #ffbc9e;
 }
 .footer-info a {
   font-size: 13px;
@@ -949,6 +952,9 @@ h1 {
   text-align:center;
   color:#ffffff;
   text-decoration:underline;
+}
+.hover:hover a {
+  color: #ffbc9e;
 }
 .button-goods-list {
   border-radius:60px;
@@ -1261,9 +1267,7 @@ h1 {
 .login-link:hover .modal-login {
   display: block;
 }
-.link-index:hover .modal-login {
-  right: 225px;
-}
+
 /*модалка вход конец*/
 
 /*Модалка поиск*/
@@ -1291,10 +1295,7 @@ h1 {
 .search:hover .modal-search {
   display: block;
 }
-.search-catalog:hover .modal-search {
-  top:60px;
-  right:345px;
-}
+
 /*Модалка поиск конец*/
 /*модалка обратной связи*/
 .modal-feedback {
