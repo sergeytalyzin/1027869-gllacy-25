@@ -558,7 +558,9 @@ a {
   margin-left: 27px;
 }
 
-.filters p {
+.filters p,
+.filters span {
+  display: block;
   padding: 0;
   margin: 0;
   font-size: 14px;
