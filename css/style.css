@@ -1740,6 +1740,9 @@ input::-ms-input-placeholder {
 input.visually-hidden:focus+label {
   outline: 1px solid blue;
 }
+input:disabled {
+  opacity: 0.4;
+}
 .google-map {
   position: absolute;
   left: 0;
