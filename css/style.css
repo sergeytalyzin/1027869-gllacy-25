@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  overflow-y: auto;
 }
 
 *,
@@ -70,12 +71,12 @@ a {
 }
 
 .button-rassbery {
-  margin-left: 357px;
+  margin-left: 353px;
   margin-top: 28px;
 }
 
 .button-chocolate {
-  margin-left: 333px;
+  margin-left: 329px;
   margin-top: 27px;
 }
 
@@ -156,6 +157,7 @@ a {
   background-color: #f8f7f4;
 }
 
+
 .header-menu-catalog a {
   padding-left: 20px;
   padding-right: 20px;
@@ -180,6 +182,12 @@ a {
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
+}
+.invisible::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 100%;
 }
 
 .site-navigation>li:hover .header-menu-catalog {
@@ -261,7 +269,7 @@ a {
   background-color: white;
   background-image: url("../img/vaf.png");
   background-position: 0px 0px;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   list-style: none;
 }
 
@@ -308,7 +316,7 @@ a {
   height: 49px;
   background-image: url("../img/ice-cream.svg");
   background-size: 100% 100%;
-  top: -11px;
+  top: -15px;
   left: -55px;
 }
 
@@ -319,7 +327,7 @@ a {
   height: 49px;
   background-image: url("../img/cow.svg");
   background-size: 100% 100%;
-  top: -11px;
+  top: -15px;
   left: -55px;
 }
 
@@ -330,7 +338,7 @@ a {
   height: 49px;
   background-image: url("../img/thermometer.svg");
   background-size: 100% 100%;
-  top: -11px;
+  top: -15px;
   left: -55px;
 }
 
@@ -341,7 +349,7 @@ a {
   height: 49px;
   background-image: url("../img/eco.svg");
   background-size: 100% 100%;
-  top: -11px;
+  top: -15px;
   left: -55px;
 }
 
@@ -353,7 +361,7 @@ a {
   width: 1200px;
   justify-content: space-between;
   padding: 0 27px;
-  margin-top: 30px;
+  margin-top: -5px;
   margin-bottom: 39px;
 }
 
@@ -482,7 +490,7 @@ a {
   color: #d07058;
 }
 
-h1 {
+.main-title {
   margin: 0;
   margin-bottom: 22px;
   margin-left: 27px;
@@ -619,7 +627,7 @@ h1 {
   height: 22px;
   left: -30px;
   border-radius: 50%;
-  border: 4px solid rgba(255, 255, 255);
+  border: 4px solid rgba(255, 255, 255, 1);
   opacity: 0.8;
 }
 
@@ -813,6 +821,8 @@ h1 {
   min-width: 349px;
   display: flex;
   justify-content: space-between;
+  flex-wrap:wrap;
+  max-width: 700px;
 }
 
 .main-header-logo {
@@ -833,13 +843,16 @@ h1 {
   width: 1200px;
   margin: 0 auto;
   display: flex;
+  align-items: flex-start;
   list-style: none;
   justify-content: space-between;
 }
 
 .offers li {
+
   width: 560px;
-  height: 229px;
+  min-height: 229px;
+  font-weight: normal;
   border-radius: 15px;
   padding-right: 20px;
   padding-left: 20px;
@@ -854,12 +867,17 @@ h1 {
 .offers-list p {
   letter-spacing: 1px;
 }
+.offers-list {
+
+}
 
 .rassbery {
+  background-color:#73172b;
   background-image: url("../img/malina.png");
 }
 
 .chocolate {
+  background-color:#3a2217;
   background-image: url("../img/choco.png");
 }
 
@@ -870,8 +888,9 @@ h1 {
   position: relative;
 }
 
-. .hits-list a {
+.hits-list a {
   display: inline-block;
+  vertical-align: center;
   text-align: center;
   text-decoration: underline;
 }
@@ -1054,7 +1073,6 @@ h1 {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding: 0;
   padding-left: 27px;
   padding-right: 27px;
@@ -1064,11 +1082,16 @@ h1 {
 .goods-list li {
   max-width: 267;
   margin: 0;
+  margin-left: 25px;
   margin-bottom: 40px;
+}
+.goods-list li:nth-child(4n+1){
+  margin-left: 0;
 }
 
 .goods-list a {
   display: inline-block;
+  vertical-align: top;
   max-width: 267px;
   padding: 0 5px;
   text-align: center;
@@ -1353,6 +1376,7 @@ h1 {
   right: 0;
   padding: 0 18px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+
 }
 
 .login-form p {
@@ -1405,6 +1429,7 @@ h1 {
 
 .login-link:hover .modal-login {
   display: block;
+
 }
 
 
@@ -1451,7 +1476,7 @@ h1 {
   height: 305px;
   padding-top: 30px;
   padding-left: 25px;
-  padding-right: 25px;
+  padding-right: 10px;
   border-radius: 5px;
   top: 63px;
   right: 27px;
@@ -1670,6 +1695,8 @@ h1 {
 
 .modal-show {
   display: block;
+  animation-name: up;
+  animation-duration: 1s;
 }
 
 .bascet:hover .modal-bascet {
@@ -1712,4 +1739,20 @@ input::-ms-input-placeholder {
 
 input.visually-hidden:focus+label {
   outline: 1px solid blue;
+}
+.google-map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  margin-left: calc(0px - (100vw - 100%) / 2);
+}
+@keyframes up {
+  0% {
+    transform:translate( -50%, -1000px);
+  }
+  100% {
+    transform:  translate(-50%, -50%);
+  }
+}
 }
