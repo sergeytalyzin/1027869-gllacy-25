@@ -1719,8 +1719,7 @@ a {
   color: #323232;
 }
 
-.modal-feedback-open input[type="text"],
-.modal-feedback-open input[type="email"] {
+.modal-feedback-open input {
   width: 267px;
   height: 44px;
   margin-left: 24px;
@@ -1963,7 +1962,7 @@ input.visually-hidden:focus+label {
     transform: translate(-50%, -50%);
   }
 }
-.input-error {
+.modal-feedback-open .input-error {
   border-color:red;
 }
 .modal-error {
@@ -1973,9 +1972,9 @@ input.visually-hidden:focus+label {
 }
 @keyframes error {
   33% {
-    transform: translateX(-15px);
+    transform: translateX(-5px);
   }
   66% {
-    transform: translateX(15px);
+    transform: translateX(5px);
   }
 }

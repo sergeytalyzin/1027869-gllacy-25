@@ -2,7 +2,7 @@ var feedback = document.querySelector(".button-feedback");
 var popup = document.querySelector(".modal-feedback-open");
 var close = document.querySelector(".feedback-close");
 var login = document.querySelector(".nick");
-var form = document.querySelector(".modal-feedback");
+var form = document.querySelector(".feedback-open");
 var email = document.querySelector(".mail")
 var textarea = document.querySelector(".textarea")
 
@@ -15,12 +15,12 @@ close.addEventListener("click", function(evt) {
   popup.classList.remove("modal-show");
 })
 
-form.addEventListener("sudmit" function(evt) {
-  if (!login.value || !email.value || !textarea) {
+form.addEventListener("submit", function(evt) {
+  if (!login.value || !email.value || !textarea.value) {
     evt.preventDefault();
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
-    popup.class.add("modal-error");
+    popup.classList.add("modal-error");
 
     if (!login.value) {
       login.classList.add("input-error");
