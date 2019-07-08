@@ -3,8 +3,8 @@ var popup = document.querySelector(".modal-feedback-open");
 var close = document.querySelector(".feedback-close");
 var login = document.querySelector(".nick");
 var form = document.querySelector(".feedback-open");
-var email = document.querySelector(".mail")
-var textarea = document.querySelector(".textarea")
+var email = document.querySelector(".mail");
+var textarea = document.querySelector(".textarea");
 
 feedback.addEventListener("click", function(evt) {
   evt.preventDefault();
@@ -13,6 +13,10 @@ feedback.addEventListener("click", function(evt) {
 close.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.remove("modal-show");
+  email.classList.remove("input-error");
+  login.classList.remove("input-error");
+  textarea.classList.remove("input-error");
+
 })
 
 form.addEventListener("submit", function(evt) {
@@ -37,8 +41,6 @@ form.addEventListener("submit", function(evt) {
     } else {
       textarea.classList.remove("input-error");
     }
-
   }
-
-});
+})
 
