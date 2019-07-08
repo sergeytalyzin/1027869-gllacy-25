@@ -1963,3 +1963,19 @@ input.visually-hidden:focus+label {
     transform: translate(-50%, -50%);
   }
 }
+.input-error {
+  border-color:red;
+}
+.modal-error {
+  animation-name: error;
+  animation-duration: 100ms;
+  animation-iteration-count: 5;
+}
+@keyframes error {
+  33% {
+    transform: translateX(-15px);
+  }
+  66% {
+    transform: translateX(15px);
+  }
+}
