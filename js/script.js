@@ -9,15 +9,16 @@ var textarea = document.querySelector(".textarea");
 feedback.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
-})
+});
 close.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.remove("modal-show");
   email.classList.remove("input-error");
   login.classList.remove("input-error");
   textarea.classList.remove("input-error");
+  popup.classList.remove("modal-error");
 
-})
+});
 
 form.addEventListener("submit", function(evt) {
   if (!login.value || !email.value || !textarea.value) {
@@ -25,6 +26,7 @@ form.addEventListener("submit", function(evt) {
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
+
 
     if (!login.value) {
       login.classList.add("input-error");
@@ -42,5 +44,4 @@ form.addEventListener("submit", function(evt) {
       textarea.classList.remove("input-error");
     }
   }
-})
-
+});

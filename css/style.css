@@ -1747,17 +1747,21 @@ a {
   padding-left: 15px;
   color: #323232;
 }
-.textarea::-webkit-input-placeholder{
-  color:#999999;
+
+.textarea::-webkit-input-placeholder {
+  color: #999999;
 }
-.textarea:-ms-input-placeholder{
-  color:#999999;
+
+.textarea:-ms-input-placeholder {
+  color: #999999;
 }
-.textarea::-ms-input-placeholder{
-  color:#999999;
+
+.textarea::-ms-input-placeholder {
+  color: #999999;
 }
-.textarea::placeholder{
-  color:#999999;
+
+.textarea::placeholder {
+  color: #999999;
 }
 
 .button-fb-open {
@@ -1974,9 +1978,11 @@ input.visually-hidden:focus+label {
     transform: translate(-50%, -50%);
   }
 }
+
 .modal-feedback-open .input-error {
-  border-color:red;
+  border-color: red;
 }
+
 .modal-error {
   -webkit-animation-name: error;
   animation-name: error;
@@ -1985,23 +1991,25 @@ input.visually-hidden:focus+label {
   -webkit-animation-iteration-count: 5;
   animation-iteration-count: 5;
 }
+
 @-webkit-keyframes error {
   33% {
-    -webkit-transform: translate(-51%,-50%);
-    transform: translate(-51%,-50%);
+    -webkit-transform: translate(-51%, -50%);
+    transform: translate(-51%, -50%);
   }
   66% {
-    -webkit-transform: translate(-49%,-50%);
-    transform: translate(-49%,-50%);
+    -webkit-transform: translate(-49%, -50%);
+    transform: translate(-49%, -50%);
   }
 }
+
 @keyframes error {
   33% {
-    -webkit-transform: translate(-51%,-50%);
-    transform: translate(-51%,-50%);
+    -webkit-transform: translate(-51%, -50%);
+    transform: translate(-51%, -50%);
   }
   66% {
-    -webkit-transform: translate(-49%,-50%);
-    transform: translate(-49%,-50%);
+    -webkit-transform: translate(-49%, -50%);
+    transform: translate(-49%, -50%);
   }
 }
