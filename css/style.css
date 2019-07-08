@@ -1700,9 +1700,9 @@ a {
   height: 443px;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-240px, -221px);
-  -ms-transform: translate(-240px, -221px);
-  transform: translate(-240px, -221px);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   border-radius: 10px;
   background-color: #f8f7f4;
 }
@@ -1972,9 +1972,9 @@ input.visually-hidden:focus+label {
 }
 @keyframes error {
   33% {
-    transform: translateX(-5px);
+    transform: translate(-51%,-50%);
   }
   66% {
-    transform: translateX(5px);
+    transform: translate(-49%,-50%);
   }
 }
