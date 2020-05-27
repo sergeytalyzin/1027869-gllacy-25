@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/25/user/1027869).
-* Наставник: `Неизвестно`.
+* Студент: [сергей талызин](https://up.htmlacademy.ru/htmlcss/25/user/1027869).
+* Наставник: [малик киров] (https://up.htmlacademy.ru/htmlcss/25/user/17217).
 
 ---
 
